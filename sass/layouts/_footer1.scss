@@ -1,0 +1,43 @@
+.logo-span {
+  display: inline-block;
+  color: var(--accent-color);
+}
+.footer-logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  display: inline-block;
+  margin-bottom: 28px;
+  color: var(--text-white);
+}
+
+.footer-mail,
+.footer-tel,
+.address-link {
+  font-style: normal;
+  line-height: 1.71px;
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.address-link,
+.link {
+  // color: var(--text-white);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.maps {
+  margin-bottom: 12px;
+}
+.mail {
+  margin-bottom: 12px;
+}
+
+.footer-mail,
+.footer-tel {
+  color: var(--sixth-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,48 @@
+.button-section {
+  padding-top: 127px;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+  margin-right: 12px;
+}
+.button-items {
+  display: flex;
+}
+.button-items {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button-items .itm {
+  margin-right: 8px;
+}
+
+.button-items .btn {
+  display: inline-block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 22px;
+  border: none;
+  color: var(--primary-text-color);
+}
+.one {
+  min-width: 67px;
+}
+.two {
+  min-width: 125px;
+}
+.three {
+  min-width: 112px;
+}
+.four {
+  min-width: 103px;
+}
+.five {
+  min-width: 130px;
+}
