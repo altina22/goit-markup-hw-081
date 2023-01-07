@@ -1,27 +1,51 @@
 .command {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
-  background-color: var(--quarter-color);
+  background-color: $quarter-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .command-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  margin-bottom: 30px;
+  min-width: 205px;
+  color: $primary-text-color;
+
+  @include font(28, null, 33, 0.03);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include font(36, null, 42, 0.03);
+  }
 }
+
 .command-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  gap: 30px;
+  width: 100%;
 }
 .command-itel {
-  width: 270px;
-  margin-right: var(--card-set);
-  margin-bottom: var(--card-set);
-  background: var(--text-white);
+  width: 100%;
+  background: $text-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    min-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+    min-width: 270px;
+  }
 }
 .command-itel:nth-child(4n) {
   margin-right: 0px;
@@ -32,29 +56,27 @@
 
 .title-com {
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  color: $primary-text-color;
+  @include font(16, 500, 19, 0.03);
 }
 .text-com {
-  font-size: 16px;
-  line-height: 1.18;
-  color: var(--second-color);
+  @include font(16, null, 19, 0.03);
+  margin-bottom: 16px;
+  color: $second-color;
   margin-bottom: 16px;
 }
 .com {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .command-itel img {
   display: block;
+  width: 100%;
 }
-.command-itel {
-  background: var(--text-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+
 .itel-cos-list {
   display: flex;
   justify-content: center;
@@ -70,21 +92,21 @@
 .itel-cos-link {
   width: 100%;
   height: 100%;
-  background-color: var(--text-white);
+  background-color: $text-white;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     &.itel-cos-icon {
-      fill: var(--text-white);
+      fill: $text-white;
     }
   }
 }
 
 .itel-cos-icon {
-  fill: var(--sevents-color);
+  fill: $sevents-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
